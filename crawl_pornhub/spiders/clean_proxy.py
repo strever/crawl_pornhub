@@ -10,7 +10,7 @@ class CleanProxySpider(scrapy.Spider):
     allowed_domains = None
     start_urls = None
 
-    try_times = 2
+    try_times = 3
 
     def start_requests(self):
         proxies = Proxy.all()

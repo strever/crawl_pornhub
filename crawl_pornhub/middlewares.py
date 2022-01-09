@@ -114,7 +114,7 @@ class RandomProxyMiddleware(object):
 class CookiesMiddleware(object):
     """ 换Cookie """
     cookie = {
-        'platform': 'pc',
+        'platform': 'PC',
         'ss': '367701188698225489',
         'bs': '%s',
         'RNLBSERVERID': 'ded6699',
