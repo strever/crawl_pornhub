@@ -17,7 +17,7 @@ NEWSPIDER_MODULE = 'crawl_pornhub.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'crawl_pornhub (+http://www.yourdomain.com)'
-USER_AGENT = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; de-DE; rv:1.3a) Gecko/20021207 Phoenix/0.5'
+USER_AGENT = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; de-DE; rv:1.3a) Gecko/20211202 Phoenix/0.5'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -63,7 +63,7 @@ HTTP_PROXY_TOR = 'http://127.0.0.1:8123'
 #REDIRECT_ENABLED = True
 #REDIRECT_MAX_TIMES = 3
 #REDIRECT_PRIORITY_ADJUST = 1
-DOWNLOAD_TIMEOUT=30
+DOWNLOAD_TIMEOUT=60
 
 # Enable or disable extensions
 # See http://scrapy.readthedocs.org/en/latest/topics/extensions.html
