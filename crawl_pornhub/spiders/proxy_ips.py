@@ -190,6 +190,25 @@ class PullProxySpider(CrawlSpider):
                 proxy = Proxy('http://', ip, port)
                 proxy.add()
         return None
+    def parse_strever_cn(self, response):
+        for p in response.xpath('//div[@class="link"]/p'):
+            str = p.xpath('text()').extract_first()
+            ip = str.split(':')[0]
+            port = str.split(':')[1].split('@')[0]
+            if ip and port:
+                proxy = Proxy('http://', ip, port)
+                proxy.add()
+        return None
+    def parse_sayhey_cn(self, response):
+        for p in response.xpath('//div[@class="proxy_li"]/p'):
+            str = p.xpath('text()').extract_first()
+            ip = str.split(':')[0]
+            port = str.split(':')[1].split('@')[0]
+            if ip and port:
+                proxy = Proxy('http://', ip, port)
+                proxy.add()
+        return None
+
 
     def closed(self, reason):
         count = Proxy.count()
