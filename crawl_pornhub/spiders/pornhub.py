@@ -18,7 +18,7 @@ class PornhubSpider(CrawlSpider):
     cmd_arg = None
 
     custom_settings = {
-        'DOWNLOAD_DELAY': 1,
+        'DOWNLOAD_DELAY': 2,
         'ITEM_PIPELINES': {
             'crawl_pornhub.pipelines.CrawlPornhubPipeline': 400
         },
